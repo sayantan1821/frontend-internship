@@ -1,12 +1,49 @@
-import React from 'react'
-import { BiRocket } from "react-icons/bi";
+import React, {useState} from 'react'
+import { Link } from 'react-router-dom';
+import { SidebarData } from './SlidebarData';
+import ReactRoundedImage from "react-rounded-image";
+
+import pic1 from '../assets/prfl2.png'
+import { RiSettings4Fill } from "react-icons/ri";
+
+import './Navbar.style.css';
 
 
 function Navbar() {
+    const [option, setOption] = useState(false);
+    const markOption = () => setOption(!option);
+
     return (
-        <div>
-            <BiRocket />
-        </div>
+        <nav className= 'sidebar'>
+            <div className='profile'>
+                <ReactRoundedImage 
+                    image={pic1}
+                    imageWidth="120"
+                    imageHeight="120"
+                />
+                <p>Welcome back,</p>
+                <h2>Julie Bell</h2>
+            </div>
+            <ul className= 'nav-menu-items'>
+                {SidebarData.map((item, index) => {
+                    return(
+                        <li key={index} className= {option ? `${item.cname} active` : item.cname}>
+                        {/* <h1>{option ? 'X' : ''}</h1> */}
+                            <Link to= {item.path} onClick= {markOption}>
+                                {item.icon}
+                                <span className='txt'>{item.title}</span>
+                            </Link>
+                        </li>
+                    )
+                })}
+            </ul>
+            <div className='settings'>
+                <Link to= '#'>
+                    <RiSettings4Fill />
+                    <span>Settings</span>
+                </Link>
+            </div>
+        </nav>
     )
 }
 

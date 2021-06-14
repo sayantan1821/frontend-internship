@@ -1,0 +1,74 @@
+.sidebar {
+    background-color: rgb(241 241 241 / 62%);
+    height: 100vh;
+    width: 15vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    font-size: 1.2rem;
+}
+.profile {
+    /* display: flex; */
+    align-self: flex-start;
+    position: absolute;
+    left: 24%;
+    top: 6%;
+}
+
+.nav-menu-items {
+    width: 86%;
+    /* display: flex; */
+    position: absolute;
+    margin-top: 10%;
+}
+.nav-text {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 0 0px 6px; */
+    list-style: none;
+    height: 60px;
+    width: auto;
+}
+
+.nav-text span {
+    padding-left: 18%;
+}
+.nav-text a {
+    text-decoration: none;
+    color: rgba(49, 49, 49, 0.507);
+    width: 88%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+.nav-text a:hover {
+    background-color: darkgrey;
+    color: #fff;
+}
+.settings {
+    align-self: flex-end;
+    position: absolute;
+    justify-self: center;
+    bottom: 6%;
+    left: 20%;
+}
+.settings a {
+    text-decoration: none;
+    color: rgba(49, 49, 49, 0.507);
+    width: 88%;
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+.settings :hover {
+    color: rgb(0, 0, 0);    
+}
+.settings span {
+    padding-left: 18%;
+} 
