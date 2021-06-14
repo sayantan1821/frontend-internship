@@ -2,7 +2,8 @@ import React from 'react';
 import './content.style.css';
 import Card from './Card';
 import { CardData } from './CardData';
-import { BsSearch } from "react-icons/bs";
+import { WiDirectionUpRight } from "react-icons/wi";
+import { BiCloudUpload } from "react-icons/bi";
 
 function Content() {
     return (
@@ -29,30 +30,66 @@ function Content() {
             </div>
             <div className='profit'>
                 <div className='graph'>
-                    graph
+                    <div className='graph-title'>
+                        <h1>Total Profit</h1>
+                        <span>September 2020</span>
+                    </div>
                 </div>
                 <div className='expense'>
-                    <h1>Expenses</h1>
-                    <div className='search-icon'>
-                        <BsSearch />
+                    <div className='expense-title'>
+                        <h1>Expenses</h1>
+                        <div className='search-icon'>
+                            <WiDirectionUpRight />
+                        </div>
                     </div>
-                    {CardData.map((item,index) => {
-                        return(
-                            <Card 
-                                className= 'expense-card'
-                                key= {index}
-                                price= {item.price}
-                                date= {item.date}
-                                icon= {item.icon}
-                                txt= {item.txt}
-                                color= {item.color}
-                            />
-                        )
-                    })}
+                    <div className='card'>
+                        {CardData.map((item,index) => {
+                            return(
+                                <Card 
+                                    className= 'expense-card'
+                                    key= {index}
+                                    price= {item.price}
+                                    date= {item.date}
+                                    icon= {item.icon}
+                                    txt= {item.txt}
+                                    color= {item.color}
+                                />
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
             <div className='invoices'>
-                upload
+                <div className='invoice-title'>
+                    <h1>Invoices</h1>
+                    <span>Recently created</span>
+                </div>
+                <div className='boxes'>
+                    <div className='box box1'>
+                        <BiCloudUpload className='box1-icon'/>
+                        <p>Upload Invoice</p>
+                    </div>
+
+                    <div className='box'>
+                        <p>#oo106</p>
+                        <h3>Mindtickle</h3>
+                        <p>2 Sep, 2020</p>
+                        <div className='box-foot'>
+                            <p>Viewd</p>
+                            <h2>$3,500</h2>
+                        </div>
+                    </div>
+
+                    <div className='box'>
+                        <p>#oo105</p>
+                        <h3>Cleancloud</h3>
+                        <p>1 Sep, 2020</p>
+                        <div className='box-foot'>
+                            <p>Sent</p>
+                            <h2>$2,000</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='work'>
                 Mobile Apps

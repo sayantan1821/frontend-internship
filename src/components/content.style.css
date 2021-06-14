@@ -12,10 +12,10 @@
 }
 .bill {
     grid-column: 1/3;
-    padding-top: 7%;
+    padding: 5% 8% 5% 0;
 }
 .bill h5 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 2%;
     color:rgba(0, 0, 0, 0.603);
 }
@@ -24,11 +24,10 @@
     grid-column: 3/-1;
 }
 .profit {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     grid-column: 1/-1;
     grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
 }
 .invoices {
     background-color: coral;
@@ -41,20 +40,30 @@
     display: flex;
     justify-content: space-between;
 }
+.due-items h1 {
+    margin-bottom: 4%;
+}
 .due-items p {
     color: rgba(0, 0, 0, 0.431);
     padding-top: 1%;
 }
 .graph{
     height: 100%;
-    width: 20vw;
-    grid-column: 1/2;
+    width: 31vw;
+    grid-column: 1/3;
+    margin-right: 40px;
 }
 .expense {
     grid-column: 3/5;
     display: flex;
-    align-self: flex-end;
-    justify-self:flex-end;
+    /* align-self: flex-end; */
+    /* justify-self:flex-end; */
+    width: 45vw;
+    height: 100%;
+    flex-direction:column;
+    position: relative;
+    right: -5%;
+    
     /* height: 100%; */
     /* width: 60%; */
     /* position: absolute; 
@@ -64,4 +73,66 @@
     /* align-items: flex-end; */
     /* position: relative;
     top: 15%; */
+}
+.expense-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 1%;
+}
+.expense-title .search-icon {
+    position: relative;
+    right: 5%;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.graph-title {
+    display: flex;
+    align-items: flex-end;
+}
+.graph-title span {
+    align-self: flex-end;
+    position: relative;
+    left: 3%;
+    bottom: 2%;
+    color: rgba(0, 0, 0, 0.404);
+}
+.graph-title h1 {
+    position: relative;
+    top: 1%;
+    align-self: flex-end;
+}
+.invoice-title {
+    display: flex;
+    align-items: flex-end;
+}
+.invoice-title span {
+    align-self: flex-end;
+    position: relative;
+    left: 2%;
+    bottom: 2%;
+    color: rgba(0, 0, 0, 0.404);
+}
+.invoice-title h1 {
+    position: relative;
+    top: 1%;
+    align-self: flex-end;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxes .box {
+    background-color: cadetblue;
+    padding: 2%;
+}
+.box1-icon {
+    /* height: 116%;
+    width: 110%; */
 }
