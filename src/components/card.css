@@ -1,0 +1,27 @@
+.card {
+    height: 22vh;
+    top: 25%;
+    width: 15%;
+    background-color: rgb(167 244 255);
+    margin-right: 2%;
+    padding: 1%;
+    display: flex;
+    flex-direction:column;
+    border-radius: 10%;
+}
+.icon {
+    height: 10%;
+    width: 20%;
+    position: relative;
+    bottom: 20%;
+    top: 50%;
+}
+.card h5 {
+    font-size: 1rem;
+    padding-top: 1%;
+}
+.card p {
+    font-size: 1.2rem;
+    position: relative;
+    top:55%;
+}
