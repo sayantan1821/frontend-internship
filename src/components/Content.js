@@ -92,7 +92,9 @@ function Content() {
                 </div>
             </div>
             <div className='work'>
-                Mobile Apps
+                <div className='work-txt'>
+                    <h1>Work Anywhere with the Invoicer Mobile Apps</h1>
+                </div>
             </div>
 
         </div>

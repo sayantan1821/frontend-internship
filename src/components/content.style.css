@@ -34,7 +34,19 @@
     grid-column: 1/4;
 }
 .work {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    background-image: url(../assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.work-txt {
+    font-size: 0.9rem;
+    width: 62%;
+    color: white;
+    padding: 7%;
 }
 .due {
     display: flex;

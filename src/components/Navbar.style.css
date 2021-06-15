@@ -10,10 +10,11 @@
 }
 .profile {
     /* display: flex; */
+    height: 10vh;
     align-self: flex-start;
     position: absolute;
-    left: 24%;
-    top: 6%;
+    left: 4vw;
+    top: 6vh;
 }
 
 .nav-menu-items {
@@ -29,7 +30,7 @@
     /* padding: 0 0 0px 6px; */
     list-style: none;
     height: 60px;
-    width: auto;
+    width: 66%;
 }
 
 .nav-text span {
