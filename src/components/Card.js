@@ -9,11 +9,14 @@ function Card({price, date, icon, txt, color, ...props}) {
         <div className='card-data' style={{color:{color}}}>
             <h2>{price}</h2>
             <h5>{date}</h5>
+            
             <Link to='#'>
-                <BsLink45Deg />
+                <BsLink45Deg size={25}/>
             </Link>
-            <div className='icon'>{icon}</div>
-            <p>{txt}</p>
+            <div className='card-footer'></div>
+                <div className='icon'>{icon}</div>
+                <p>{txt}</p>
+            <div/>
         </div>
     )
 }

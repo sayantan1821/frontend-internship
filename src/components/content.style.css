@@ -1,5 +1,5 @@
 .content {
-    width: 81vw;
+    width: 80vw;
     height: 92vh;
     position: absolute;
     top: 4vh;
@@ -14,14 +14,15 @@
     grid-column: 1/3;
     padding: 5% 8% 5% 0;
 }
-.bill h5 {
+.bill h4 {
     font-size: 1.2rem;
     padding-bottom: 2%;
+    font-size: 1.2rem;
     color:rgba(0, 0, 0, 0.603);
 }
 .outstanding {
-    background-color: rgb(74, 86, 246);
     grid-column: 3/-1;
+    color: rgba(0, 0, 0, 0.603);
 }
 .profit {
     /* background-color: blueviolet; */
@@ -30,8 +31,8 @@
     display: flex;
 }
 .invoices {
-    background-color: coral;
     grid-column: 1/4;
+    margin-right: 15vh;
 }
 .work {
     /* background-color: chartreuse; */
@@ -39,12 +40,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    margin-left: -6vw;
     justify-content: flex-start;
     align-items: flex-end;
+    border-radius: 15%;
 }
 .work-txt {
-    font-size: 0.9rem;
-    width: 62%;
+    font-size: 1.5vh;
+    width: 55%;
     color: white;
     padding: 7%;
 }
@@ -70,7 +73,8 @@
     display: flex;
     /* align-self: flex-end; */
     /* justify-self:flex-end; */
-    width: 45vw;
+    height: 30vh;
+    width: 44vw;
     height: 100%;
     flex-direction:column;
     position: relative;
@@ -139,12 +143,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1% 4%;
+}
+.boxes .box1 {
+    font-size: 1.9vh;
+    border: 2px dashed rgba(0, 0, 0, 0.212);
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 20vh;
+    width: 10vw;
+    align-items: center;
 }
 .boxes .box {
-    background-color: cadetblue;
-    padding: 2%;
+    background-color: rgba(199, 199, 199, 0.123);
+    padding: 2vh 3vw;
+    border-radius: 10%;
+    height: 20vh;
 }
-.box1-icon {
-    /* height: 116%;
-    width: 110%; */
+.box p {
+    font-size: 2vh;
+    margin: 4% 0;
+}
+.box h3 {
+    font-size: 2.2vh;
+}
+.box-foot {
+    padding-top: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 255, 255, 0.575);
+}
+.box-foot p {
+    margin-left: -10%;
+    margin-right: 20%;
 }

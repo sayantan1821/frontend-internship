@@ -9,7 +9,7 @@ function Content() {
     return (
         <div className='content'>
             <div className='bill'>
-                <h5>Invoices</h5>
+                <h4>Invoices</h4>
                 <div className='due'>
                     <div className='due-items overdue'>
                         <h1>$12,095</h1>
@@ -26,7 +26,7 @@ function Content() {
                 </div>
             </div>
             <div className='outstanding'>
-                Outstanding Revenue
+                <h4>Outstanding Revenue</h4>
             </div>
             <div className='profit'>
                 <div className='graph'>
@@ -66,14 +66,15 @@ function Content() {
                 </div>
                 <div className='boxes'>
                     <div className='box box1'>
-                        <BiCloudUpload className='box1-icon'/>
-                        <p>Upload Invoice</p>
+                        <BiCloudUpload size='md'/>
+                        <span>Upload Invoice</span>
                     </div>
 
                     <div className='box'>
-                        <p>#oo106</p>
+                        <p>#00106</p>
                         <h3>Mindtickle</h3>
                         <p>2 Sep, 2020</p>
+                        <br></br>
                         <div className='box-foot'>
                             <p>Viewd</p>
                             <h2>$3,500</h2>
@@ -81,9 +82,10 @@ function Content() {
                     </div>
 
                     <div className='box'>
-                        <p>#oo105</p>
+                        <p>#00105</p>
                         <h3>Cleancloud</h3>
                         <p>1 Sep, 2020</p>
+                        <br></br>
                         <div className='box-foot'>
                             <p>Sent</p>
                             <h2>$2,000</h2>

@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SlidebarData';
-import ReactRoundedImage from "react-rounded-image";
 
-import pic1 from '../assets/prfl2.png'
+import pic1 from '../assets/prfl3.png'
 import { RiSettings4Fill } from "react-icons/ri";
 
 import './Navbar.style.css';
@@ -16,11 +15,7 @@ function Navbar() {
     return (
         <nav className= 'sidebar'>
             <div className='profile'>
-                <ReactRoundedImage 
-                    image={pic1}
-                    imageWidth="120"
-                    imageHeight="120"
-                />
+                <img className='prfl-img' src= {pic1} alt='profile'/>
                 <p>Welcome back,</p>
                 <h2>Julie Bell</h2>
             </div>
